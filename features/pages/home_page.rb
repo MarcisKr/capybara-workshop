@@ -9,6 +9,8 @@ class HomePage < BasePage
     @input_signup_password_again = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "password2"]')
     @input_signup_project_name = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "project_name"]')
     @button_signup_cancel = Element.new(:xpath, '//div[@id = "signup"]/descendant::img[@class = "closecross"]')
+    @input_login_email = Element.new(:xpath, '//*[@id="login"]/form/div/descendant::input[@type="email"]')
+    @input_login_password = Element.new(:xpath, )
   end
 
   def visible?
