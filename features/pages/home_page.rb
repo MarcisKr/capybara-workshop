@@ -4,10 +4,13 @@ class HomePage < BasePage
     @button_start = Element.new(:id, 'start_button')
     @button_login = Element.new(:id, 'login-b')
     @button_signup = Element.new(:id, 'signup-b')
+    @input_login_email = Element.new(:xpath, '//div[@id = "login"]/descendant::input[@name = "login"]')
     @input_signup_email = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "login"]')
+    @input_login_password = Element.new(:xpath, '//div[@id = "login"]/descendant::input[@name = "password"]')
     @input_signup_password = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "password1"]')
     @input_signup_password_again = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "password2"]')
     @input_signup_project_name = Element.new(:xpath, '//div[@id = "signup"]/descendant::input[@name = "project_name"]')
+    @button_login_confirm = Element.new(:xpath, '//*[@id="login"]/descendant::form/descendant::button')
     @button_signup_cancel = Element.new(:xpath, '//div[@id = "signup"]/descendant::img[@class = "closecross"]')
   end
 
@@ -21,6 +24,10 @@ class HomePage < BasePage
     @button_start.click
   end
 
+  def click_login
+    @button_login.click
+  end
+
   def enter_passwords(password)
     enter_password(password)
     enter_password_again(password)
@@ -32,6 +39,19 @@ class HomePage < BasePage
 
   def enter_password_again(password)
     @input_signup_password_again.send_keys password
+  end
+
+  def enter_login_email(email)
+    @input_login_email.send_keys(email)
+  end
+
+  def enter_login_password(password)
+    @input_login_password.send_keys(password)
+  end
+
+  def login(email, password)
+    enter_login_email(email)
+    enter_login_password(password)
   end
 
   def enter_signup_email(email)
@@ -56,5 +76,9 @@ class HomePage < BasePage
 
   def load
     visit('/')
+  end
+
+  def confirm_login
+    @button_login_confirm.click
   end
 end
