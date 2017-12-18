@@ -67,7 +67,6 @@ def cancel_signup
 end
 
 def submit_signup(email, password, project_name)
-  click_try_now
   enter_signup_email email
   enter_passwords password
   enter_project_name project_name
