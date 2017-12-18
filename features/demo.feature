@@ -7,5 +7,5 @@ Feature: Demo Feature
 
     Scenario: Login positive
         Given I am on Appimation home page
-        When I log in with user auto_apimation@mailinator.com Parole12
+        When I log in
         Then I am on project page
