@@ -8,6 +8,10 @@ module Users
     @signup_user ||= User.new(email: '', password: 'passworddemo')
     @signup_user
   end
+    def Users.login_user
+        @login_user ||= User.new(email: 'auto_apimation@mailinator.com', password: 'Parole12')
+        @login_user
+    end
 end
 
 class User

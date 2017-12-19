@@ -49,9 +49,9 @@ def enter_login_password(password)
   @input_login_password.send_keys(password)
 end
 
-def login(email, password)
-  enter_login_email(email)
-  enter_login_password(password)
+def login(user)
+  enter_login_email(user.email)
+  enter_login_password(user.password)
 end
 
 def enter_signup_email(email)
@@ -66,10 +66,10 @@ def cancel_signup
   @button_signup_cancel.click
 end
 
-def submit_signup(email, password, project_name)
-  enter_signup_email email
-  enter_passwords password
-  enter_project_name project_name
+def submit_signup(user)
+  enter_signup_email user.email
+  enter_passwords user.password
+  enter_project_name user.project_name
   cancel_signup
 end
 
