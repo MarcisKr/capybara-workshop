@@ -1,0 +1,606 @@
+[
+  {
+    "uri": "features/demo.1.feature",
+    "id": "demo-feature",
+    "keyword": "Feature",
+    "name": "Demo Feature",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demo-feature;open-signup-page",
+        "keyword": "Scenario",
+        "name": "Open SignUp Page",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35492
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16696
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10820
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2689419977
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on Appimation home page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4781296315
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 31386
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I submit signup details",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3570977301
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 30484
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I see Appimation home page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268014997
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 23893
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16485586
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29538
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 474521377
+            }
+          }
+        ]
+      },
+      {
+        "id": "demo-feature;login-positive",
+        "keyword": "Scenario",
+        "name": "Login positive",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52678
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10354
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10208
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13282639
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on Appimation home page",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4039041373
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 26897
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3183628598
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 22750
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am on project page",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4971485525
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 23434
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4933135
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28334
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564631359
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/demo.feature",
+    "id": "demo-feature",
+    "keyword": "Feature",
+    "name": "Demo Feature",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demo-feature;open-signup-page",
+        "keyword": "Scenario",
+        "name": "Open SignUp Page",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26574
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14878
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10787
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14998438
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on Appimation home page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2764691468
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 38888
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I submit signup details",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3116655935
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 35317
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I see Appimation home page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325055394
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 21357
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7571916
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25091
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 392197227
+            }
+          }
+        ]
+      },
+      {
+        "id": "demo-feature;login-positive",
+        "keyword": "Scenario",
+        "name": "Login positive",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26018
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10611
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8848
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12556670
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on Appimation home page",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2451767477
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 23126
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "name": "I log in",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2256827765
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 20317
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "name": "I am on project page",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3142703328
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/env.rb:51"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 32733
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5598204
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-screenshot-1.0.18/lib/capybara-screenshot/cucumber.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23106
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.16.1/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 398577524
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

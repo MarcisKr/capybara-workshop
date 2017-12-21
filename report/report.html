@@ -1,0 +1,15 @@
+Feature: Demo Feature
+
+  Scenario: Open SignUp Page           # features/demo.feature:3
+    Given I am on Appimation home page # features/step_definitions/login_steps.rb:1
+    When I submit signup details       # features/step_definitions/login_steps.rb:5
+    Then I see Appimation home page    # features/step_definitions/login_steps.rb:9
+
+  Scenario: Login positive             # features/demo.feature:8
+    Given I am on Appimation home page # features/step_definitions/login_steps.rb:1
+    When I log in                      # features/step_definitions/login_steps.rb:13
+    Then I am on project page          # features/step_definitions/login_steps.rb:17
+
+2 scenarios (2 passed)
+6 steps (6 passed)
+0m24.724s
